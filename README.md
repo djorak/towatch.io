@@ -4,7 +4,7 @@ towatch.io
 A webapp to manage your episodes left to watch on Betaseries and more
 
 ### Prerequisites
-- MongoDB
+- [MongoDB](http://docs.mongodb.org/manual/installation/)
 - Node / npm
 - Grunt & Bower `$ npm install -g grunt-cli bower`
 
