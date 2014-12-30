@@ -1,25 +1,30 @@
 {
-    "name": "towatch.io",
-    "version": "0.1.0",
-    "description": "A webapp to manage your episodes left to watch on Betaseries and more",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/djorak/towatch.io"
-    },
-    "author": "Julien Djorak Maze",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/djorak/towatch.io/issues"
-    },
-    "homepage": "https://github.com/djorak/towatch.io",
-    "main": "server.js",
-    "dependencies": {
-        "body-parser": "~1.10.0",
-        "express": "~4.10.6",
-        "method-override": "~2.3.0",
-        "mongoose": "~3.8.21"
-    }
+  "name": "towatch.io",
+  "version": "0.1.0",
+  "description": "A webapp to manage your episodes left to watch on Betaseries and more",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djorak/towatch.io"
+  },
+  "author": "Julien Djorak Maze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djorak/towatch.io/issues"
+  },
+  "homepage": "https://github.com/djorak/towatch.io",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.10.0",
+    "express": "~4.10.6",
+    "method-override": "~2.3.0",
+    "mongoose": "~3.8.21"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
