@@ -12,6 +12,7 @@ A webapp to manage your episodes left to watch on Betaseries and more
 - Clone repository
 - `$ npm install`
 - `$ bower install`
+- *TODO: script to create database*
 
 ### Run the app
 `$ node server.js` (*TODO: use Grunt to launch the server and watch for changes*)
