@@ -1,9 +1,12 @@
-# Require any additional compass plugins here.
+additional_import_paths = [
+    "./bower_components/normalize.scss",
+    "./bower_components/Skeleton-Sass/scss"
+]
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "/public/css"
-sass_dir = "/assets/styles"
+css_dir = "/public/dist/css"
+sass_dir = "/public/src/assets/styles"
 #images_dir = '../assets/images/icons'
 #generated_images_dir = '../static/images'
 
