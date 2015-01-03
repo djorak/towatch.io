@@ -1,0 +1,8 @@
+module.exports = {
+    url: 'https://api.betaseries.com/',
+    key: 'XXXXXXXXXXXX',
+    token: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    version: '2.4',
+    format: 'json',
+    userAgent: 'ToWatch'
+}
