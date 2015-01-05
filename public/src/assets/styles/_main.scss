@@ -1,3 +1,14 @@
-h1 {
-    color: #ff0;
+$body-font-family: "Roboto", Arial, sans-serif;
+
+body {
+    background-color: #eee;
+}
+
+p {
+    font-family: $body-font-family;
+}
+
+// Authentification
+.auth {
+    text-align: center;
 }
