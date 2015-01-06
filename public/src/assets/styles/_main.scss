@@ -8,6 +8,15 @@ p {
     font-family: $body-font-family;
 }
 
+// Header
+.header__link-home {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: #333;
+    }
+}
 // Authentification
 .auth {
     text-align: center;
