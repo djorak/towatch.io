@@ -3,13 +3,12 @@
 var express        = require('express'),
     app            = express(),
     bodyParser     = require('body-parser'),
-    methodOverride = require('method-override');
+    methodOverride = require('method-override'),
+    // == DATABASE CONF ==
+    db = require('./config/db'),
+    port = process.env.PORT || 8080;
 
-
-// == CONFIG ==
-
-var db = require('./config/db');
-var port = process.env.PORT || 8080;
+api = require('./config/api');
 
 // (uncomment after you enter in your own credentials in config/db.js)
 // mongoose.connect(db.url);
@@ -32,11 +31,26 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
+// == OAUTH2 ==
+/*
+var oauth2 = require('simple-oauth2')({
+  clientID: api.key,
+  clientSecret: api.token,
+  site: 'https://www.betaseries.com/authorize',
+  tokenPath: '/oauth/access_token'
+});
+
+// Authorization uri definition
+var authorization_uri = oauth2.authCode.authorizeURL({
+  redirect_uri: 'http://localhost:8080/callback',
+  scope: 'notifications',
+  state: '3(#0/!~'
+});
+*/
 
 // == ROUTES ==
 
 require('./app/routes')(app);
-
 
 // == START APP ==
 
