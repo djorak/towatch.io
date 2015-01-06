@@ -3,4 +3,4 @@ node_modules
 bower_components
 .sass-cache
 public/dist
-config/api.conf.js
+config/api.js

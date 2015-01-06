@@ -22,7 +22,7 @@
     "express": "~4.10.6",
     "method-override": "~2.3.0",
     "mongoose": "~3.8.21",
-    "simple-oauth2": "~0.2.1"
+    "request": "^2.51.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
