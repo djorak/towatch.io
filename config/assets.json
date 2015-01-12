@@ -1,0 +1,20 @@
+{
+    "dist": {
+        "css": {
+            "public/dist/css/app.min.css": [
+                "bower_components/normalize.css/normalize.css",
+                "public/dist/css/app.css"
+            ]
+        },
+        "js": {
+            "public/dist/js/app.min.js": [
+                "bower_components/angular/angular.min.js",
+                "bower_components/angular-route/angular-route.min.js",
+                "public/src/js/**/*.js"
+            ]
+        }
+    },
+    "dev": {
+
+    }
+}

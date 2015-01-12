@@ -1,15 +1,20 @@
+'use strict';
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        assets: grunt.file.readJSON('config/assets.json'),
         /* == JS TASKS == */
         jshint: {
             all: ['public/src/js/**/*.js']
         },
         uglify: {
-            build: {
-                files: {
-                    'public/dist/js/app.min.js': ['public/src/js/**/*.js', 'public/src/js/*.js']
-                }
+            dist: {
+                options: {
+                    mangle: true,
+                    compress: true
+                },
+                files: '<%= assets.main.js %>'
             }
         },
         /* == CSS TASKS == */
@@ -39,9 +44,9 @@ module.exports = function(grunt) {
             }
         },
         cssmin: {
-            build: {
+            dist: {
                 files: {
-                    'public/dist/css/app.min.css': 'public/dist/css/app.css'
+                    files: '<%= assets.main.css %>'
                 }
             }
         },
