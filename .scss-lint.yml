@@ -1,5 +1,5 @@
 linters:
     Indentation:
         width: 4
-    SelectorFormat
+    SelectorFormat:
         convention: 'BEM'
